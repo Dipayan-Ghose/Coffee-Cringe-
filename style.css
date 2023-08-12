@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbarDesign{
+ padding: 20px 80px 20px 80px;
+
+ background-color: brown;
+}
+
+.nav-link, .navbar-brand{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.cover{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(8,8,8,0.5),  rgba(12,12,12,0.5)), url('./image/cover2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: sticky;
+}
+
+.coverText h1{
+    font-size: 55px;
+}
+.coverText p{
+    font-size: 24px;
+}
+
+.coffeeSection{
+    width: 80%;
+}
+
+.textColor{
+    color: chocolate;
+    font-weight: 600;
+}
+
+.textMargin{
+    margin: 50px;
+    width: 60%;
+}
+
+/* .cardGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+} */
+
+.withBorder{
+    border-right: 2px solid chocolate;
+    margin-right: 2px;
+}
+
+.card img{
+    max-width: 250px;
+    height: 320px;
+    margin: 15px auto;
+}
+.reverse{
+    width: 90%;
+    margin: auto;
+    background: rgb(95, 1, 1);
+}
+
+.mapImage{
+    background-image: linear-gradient(rgba(8,8,8,0.3), rgba(8,8,8,0.3)), url('./image/map.PNG');
+    background-size: cover; 
+    background-position: center;
+}
+
+.formSection{
+    width: 80%;
+    margin: 50px auto;
+
+}
+
+.formResponsive {
+    width: 30%;
+}
+
+.carouselSection{
+    width: 400px;
+}
+
+footer{
+    background-color: brown;
+}
+
+.footerSection{
+    padding: 50px 200px;
+}
+.footerSection p{
+    font-size: 20px;
+}
+
+@media only screen and (max-width:800px) {
+   
+    .withBorder{
+        border-right: 0;
+        margin-right: 0;
+        margin: auto;     
+    }
+    .card{
+        width: 90%;
+    }
+    .navbarDesign{
+        padding: 10px;
+       }
+    .coffeeSection{
+        width: 100%;
+    }   
+    .textMargin{
+        margin: 20px;
+        width: 100%;
+    }
+    .reverse {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .formSection{
+        width: 100%;
+        margin: 20px auto;
+    
+    }
+    .formResponsive {
+        width: 90%;
+    }
+    .coverText h1{
+        font-size: 25px;
+        
+    }
+    .coverText p{
+        font-size: 10px;
+    }
+    .footerSection{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .footerSection p{
+        font-size: 15px;
+    }
+    #carouselExampleDark{
+        width: 80%;
+    }
+    
+}
